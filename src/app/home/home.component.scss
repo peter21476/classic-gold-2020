@@ -1,0 +1,40 @@
+@import '../../styles.scss';
+
+.current-wrapper {
+    background: url('../../assets/images/old-radio.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    padding:20px;
+    margin:0;
+}
+
+.top-section {
+    margin-top:80px;
+}
+
+.intro-text {
+    background: $orange;
+    padding:20px;
+}
+
+.current-text {
+    background:rgba(254, 255, 219, 0.7);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.news-item {
+    margin-bottom:20px;
+    background:$whitebkg;
+    padding:20px;
+}
+
+.news-title {
+    margin-top:80px;
+    .col-md-12 {
+        padding:0;
+    }
+}

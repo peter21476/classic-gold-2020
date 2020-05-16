@@ -1,0 +1,107 @@
+@import '../../styles.scss';
+
+header {
+    background: $black;
+}
+
+.navbar {
+    text-align: center;
+    margin:0 auto;
+    ul {
+        border-top:1px solid $orange;
+        border-bottom:1px solid $orange;
+        li {
+            border-right:1px solid $orange;
+            padding:2px 30px;
+            &:last-child {
+                border-right:0;
+            }
+
+            a {
+                color:$orange;
+                position: relative;
+                transition: color 0.5s, 0.2s;
+                &:after {
+                    position: absolute;
+                    bottom:-2px;
+                    left:0;
+                    right:0;
+                    margin:auto;
+                    content:'';
+                    height:2px;
+                    width:0px;
+                    background:$gold;
+                    display:block;
+                    transition: width 0.5s 0.2s
+                }
+
+                &:hover {
+                    color:$gold;
+                    &:after {
+                        width:40px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.weather-wrapper {
+    text-align: center;
+    margin-top: 30px;
+    padding: 0px 0px 10px 0px;
+    background:$whitebkg;
+    color:$black;
+    border-bottom:5px solid $orange;
+
+    .weather-city {
+        font-weight: bold;
+    }
+
+}
+
+.change-location {
+    text-align: center;
+    color:white;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.ng-fa-icon {
+    display:block;
+}
+
+.modal-body {
+    label {
+        display:block;
+        font-weight:bold;
+        margin-top:20px;
+    }
+
+    select {
+        width:100%;
+        padding:10px;
+    }
+
+    input {
+        padding:8px;
+    }
+}
+
+.alert-message {
+    padding:20px;
+    border: thin dashed red;
+    margin-top:20px;
+    color:red;
+    .message-box {
+        .location-updated {
+            p {
+                color:green!important;
+            }
+        }
+    }
+}
